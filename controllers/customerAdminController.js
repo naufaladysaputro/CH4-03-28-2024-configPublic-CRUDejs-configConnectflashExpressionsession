@@ -56,7 +56,7 @@ const editCustomer = async (req, res) => {
         id: req.params.id,
       },
     });
-    req.flash("message", "Diedit");
+    req.flash("message", "Edited");
     res.redirect("/customers");
   } catch (err) {
     res.render("error.ejs", {
